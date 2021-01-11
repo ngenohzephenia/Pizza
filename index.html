@@ -104,21 +104,21 @@
               <form action="" id="pizzainfo">
                   <label for="">Choose your pizza size</label>
                   <select class="form-control" name="size" id="size">
-                      <option value="1200">Large @ ksh 1500</option>
-                      <option value="900">Medium @ ksh 1200</option>
-                      <option value="600">Small @ ksh 800</option>
+                      <option value="1100">Large @ ksh 1200</option>
+                      <option value="850">Medium @ ksh 900</option>
+                      <option value="600">Small @ ksh 700</option>
                   </select>
                   <label for="">Choose your desired crust type</label>
                   <select class="form-control" name="" id="crust">
-                      <option value="230" name="crust">stuffed crust @ ksh 350
-                      <option value="250" name="crust">Crispy @ ksh 300
-                      <option value="300" name="crust">Glutten free @ ksh 330
+                      <option value="230" name="crust">stuffed crust @ ksh 300
+                      <option value="250" name="crust">Crispy @ ksh 250
+                      <option value="300" name="crust">Glutten free @ ksh 280
                   </select>
                   <label for="">Choose your Desired toppings</label> <br>
-                  <input value="150" type="checkbox" id="toppingone">Mushrooms
-                  <input value="150" type="checkbox" id="toppingone">Sausage
                   <input value="150" type="checkbox" id="toppingone">Onions
+                  <input value="150" type="checkbox" id="toppingone">Sausage
                   <input value="150" type="checkbox" id="toppingone">Tikka Sauce
+                  <input value="150" type="checkbox" id="toppingone">Mushrooms
                   <input value="150" type="checkbox" id="toppingone">Mozarella Cheese
 
                   <label for="">Input Quantity</label>
@@ -146,6 +146,59 @@
     <div class ="container-fluid mt-3 text-center" id="delivery">
       
     </div>
+
+        <!-- Contact form -->
+
+        <div class="container-fluid mt-5 text-center text-white">
+          <div class="bg"><h2>We appreciate your feedback</h2>
+            <div class= "container mt-4 text-white w-50 p-3">
+              <form id="contact-form" class="text-white" action="submit.php" method="post"  role="form">
+
+                <div class="messages"></div>
+          
+                <div class="controls">
+            
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-group">
+                                <input id="form_name" type="text" name="name" class="form-control" placeholder="Name...." required="required" data-error="Name is required">
+                                <!-- <div class="help-block with-errors"></div> -->
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group">
+                                <input id="form_email" type="email" name="email" class="form-control" placeholder="Email..." required="required" data-error="Valid email is required.">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                       <div div class="col">
+                            <div class="form-group">
+                                <textarea id="form_message" name="message" class="form-control" placeholder=" Your Message here..." rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                    </div>
+                        
+                        <div class="col-md-12">
+                            <input type="submit" class="btn btn-success btn-send" value="Send message">
+                        </div>
+                    
+                        <div id="output"> </div>
+
+                </div>
+            
+            </form>
+            </div>
+
+
+
+          </div>
+            
+            
+        </div>
     
 
  
